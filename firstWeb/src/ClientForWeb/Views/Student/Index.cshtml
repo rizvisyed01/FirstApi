@@ -1,0 +1,22 @@
+﻿@model ICollection<ViewModels.StudentBasic>
+
+<h1>Index pagina studenten</h1>
+
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Voornaam</th>
+        <th>Famillienaam</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+
+        <tr>
+            <td>@Html.DisplayFor(i => item.Id)</td>
+            <td>@Html.DisplayFor(i => item.FirstName)</td>
+            <td>@Html.DisplayFor(i => item.LastName)</td>
+        </tr>    
+
+    }
+</table>
